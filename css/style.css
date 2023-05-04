@@ -1,0 +1,473 @@
+.index_title{
+    font-family: Rosario;
+    color: #ca1bbb;
+    font-size: 110;
+    font: bold;
+    text-shadow: -5px 7px 6px rgba(255, 255, 255, 0.73);
+    font-size: 700%;
+	line-height: 1.28;
+	letter-spacing: -0.5px;
+    opacity: 70%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.body_index{
+    background-image: url(../assets/Soirée\ -\ Portada\ 3000x3000\ JPG.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #680a53;
+    background-position-y: 48%;
+}
+
+ .index_vid{
+    display: flex;
+    justify-content: center;
+}
+/*css del index*/
+/*estilo del body*/
+
+body{
+    background-image: linear-gradient(#680a53, black);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*fin css del body*/
+
+.index_nav{
+    display: flex;
+    justify-content: center;
+}
+
+body header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+
+body header nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body header nav ul li a{
+    padding: 0px 10px 0px 10px;
+    opacity: 93%;
+    box-shadow:  -0.5px 2px 5px rgb(255, 255, 255);
+    background: #680a53;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-width: 0px;
+    border-radius: 16px 16px 16px 16px;
+    border-style: dashed;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Koulen', cursive;
+    opacity: 78%;
+}
+
+body header nav ul li:nth-child(1){
+    border-right  : 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    padding-right: 0.4cm;
+}
+
+body header nav ul li:nth-child(2){
+    border-right  : 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    padding-left: 0.4cm;
+    padding-right: 0.4cm;
+}
+
+body header nav ul li:nth-child(3){
+    border-right  : 2px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+    padding-left: 0.4cm;
+    padding-right: 0.4cm;
+}
+
+body header nav ul li:nth-child(4){
+    letter-spacing: 1px;
+    padding-left: 0.4cm;
+    padding-right:  0.4cm;
+    border-right  : 2px solid rgb(0, 0, 0);
+}
+
+body header nav ul li:nth-child(5){
+    letter-spacing: 1px;
+    padding-left: 0.4cm;
+}
+
+/*estilo del nav*/
+/*estilo del footer*/
+
+body footer div a{
+    width: 109px;
+    height: 45px;
+    opacity: 70%;
+    color: #ffffff;
+    font-family: 'Spinnaker', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    word-spacing: 20px;
+    justify-content: center;
+}
+
+body footer div{
+    display: flex;
+    justify-content: center;
+}
+
+body footer h3{
+    color: #ffffff;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+}
+
+/*fin css del footer*/
+/*css de nosotros*/
+
+.nosotros_title{
+    color: #ffffff;
+    font-family: 'Koulen', cursive;
+    font-size: 700%;
+    font-weight: 400;
+    opacity: 90%;
+    text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+    margin-top: auto;
+    margin-bottom: 0cm;
+}
+
+.nosotros_index{
+
+    background-image: url(../assets/Soirée\ -\ Portada\ 3000x3000\ JPG.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 50%;
+    display: grid;
+}
+
+
+.nosotros_p article p{
+
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+body section article h2{
+    font-family: 'Koulen', cursive;
+    font-size: 47px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* galeria de nosotros */
+
+*{
+	box-sizing: border-box;
+}
+/*:root{
+	counter-reset: item;
+}*/
+body{
+	padding: 1rem;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 1fr);
+	grid-auto-rows: 1fr;
+	grid-auto-flow: dense;
+	gap: 0.5rem;
+	max-width: 1200px;
+	margin: auto;
+}
+.grid::before{
+	content: "";
+	grid-column: 1;
+	grid-row: 1;
+	padding-bottom: 100%;
+}
+.grid div:first-child{
+	grid-column: 1;
+	grid-row: 1;
+}
+.grid div{
+	display: grid;
+	place-items: center;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 8px silver;
+}
+img{
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/*.grid div::after{
+	content: counter(item);
+	counter-increment: item;
+	font: 3rem/1.5 sans-serif;
+	color: dimgrey;
+}*/
+.grid .one{
+	background-color: lightblue;
+}
+.grid .two{
+	background-color: lightsalmon;
+}
+.grid .three{
+	background-color: khaki;
+}
+.grid .four{
+	background-color: silver;
+}
+@media screen and (min-width: 460px){
+	.grid{
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.grid .span-h{
+		grid-column: span 2;
+	}
+	.grid .span-v{
+		grid-row: span 2;
+	}
+}
+
+/*fin css nosotros*/
+/*css del privacy policy*/
+
+.privacy_title{
+    font-family: 'Koulen', cursive;
+    font-size: 700%;
+    color: #ffffff;
+    text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+    margin-top: auto;
+    margin-bottom: 0cm;
+    opacity: 85%;
+}
+
+body header h2{
+    color: #ffffff;
+    font-family: "Helvetica";
+	font-weight: 400;
+	font-size: 36px;
+	text-decoration: underline;
+}
+
+/*fin css del privacy policy*/
+/* css de merch */
+
+.merch_index{
+    background-image: url(../assets/DSC_0198.jpg);
+    background-position-x: 25%;
+    background-position-y: -850px;
+    background-repeat: no-repeat;
+}
+
+.merch_title{
+    font-family: 'Koulen', cursive;
+    font-size: 700%;
+    color: #ffffff;
+    text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+    word-spacing: 30px;
+    margin-top: auto;
+    margin-bottom: unset;
+    opacity: 85%;
+}
+
+body section article h2{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+body section article ul{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.remeras_list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.remeras_list ul li{
+    margin-right: 1cm;
+}
+
+.remeras_list ul li .merch_remera1{
+    width: 250px;
+    height: 250px;
+}
+
+.remeras_list ul li .merch_remera2{
+    width: 250px;
+    height: 250px;
+}
+
+.remeras_list ul li .merch_remera3{
+    width: 250px;
+    height: 250px;
+}
+
+.CD_list ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.CD_list ul li{
+    margin-right: 1.5cm;
+}
+
+.CD_list ul li .merch_ep{
+    width: 400px;
+    height: 300px;
+}
+
+.CD_list ul li .merch_single{
+    width: 400px;
+    height: 300px;
+}
+
+.remeras_list ul li img{
+    position: static;
+}
+
+.CD_list ul li img{
+    position: static;
+}
+
+/* fin css merch */
+/* css shows */
+
+/* calendario shows grid */
+
+.shows_article{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.shows_article div a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 700;
+}
+
+.shows_article p{
+    font-family: 'Spinnaker', sans-serif;
+}
+
+/* calendario grid fin */
+
+.shows_title{
+    font-family: 'Koulen', cursive;
+    font-size: 700%;
+    color: #ffffff;
+    text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+    opacity: 85%;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.shows_index{
+    background-image: url(../assets/DSC_0198.jpg);
+    background-position-x: -1100px;
+}
+
+/* css responsive mobile */
+
+@media (max-width: 576px) {
+    /* mobile nav css */
+    body header nav ul{
+        flex-direction: column;
+    }
+    body header nav ul li a{
+        font-size: 12px;
+    }
+    body header nav ul li:nth-child(1){
+        border-right  : none;
+        letter-spacing: 1px;
+    }
+    
+    body header nav ul li:nth-child(2){
+        border-right  : none;
+        letter-spacing: 1px;
+        padding-left: 0;
+    }
+    
+    body header nav ul li:nth-child(3){
+        border-right  : none;
+        letter-spacing: 1px;
+        padding-left: 0;
+    }
+    
+    body header nav ul li:nth-child(4){
+        letter-spacing: 1px;
+        border-right  : none;
+        padding-left: 0;
+    }
+
+    body header nav ul li:nth-child(5){
+        letter-spacing: 1px;
+        border-right  : none;
+        padding-left: 0;
+    }
+
+    .index_nav ul{
+        justify-content: center;
+        flex-direction: row;
+    }
+    /* fin mobile del nav */
+    /* mobile de shows */
+    .shows_article{
+        grid-template-columns: min-content;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    .shows_title{
+        display: flex;
+        justify-content: center;
+    }
+    /* fin mobile de shows */
+
+    /* mobile de merch */
+    .remeras_list ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    .CD_list ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .merch_title{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        margin-top: 20px;
+    }
+    /* fin mobile de merch */
+    /* mobile de index */
+    .index_title{
+        font-size: 400%;
+    }
+    }
