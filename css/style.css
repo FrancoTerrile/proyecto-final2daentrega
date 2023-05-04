@@ -150,21 +150,20 @@ body footer h3{
     background-image: url(../assets/Soirée\ -\ Portada\ 3000x3000\ JPG.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: 50%;
-    display: grid;
+    background-position-y: 110%;
 }
 
 
-.nosotros_p article p{
+.nosotros_p p{
 
     font-family: 'Spinnaker', sans-serif;
-    font-size: 26px;
+    font-size: 100%;
     color: #ffffff;
 }
 
-body section article h2{
+.nosotros_gallery h2{
     font-family: 'Koulen', cursive;
-    font-size: 47px;
+    font-size: 220%;
     color: #ffffff;
     text-align: center;
 }
