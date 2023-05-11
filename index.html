@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./assets/logoprovifravicon.png" type="image/x-icon">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/01ed41416d.js" crossorigin="anonymous"></script>
+    <!-- bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,26 +31,46 @@
     <main>
         <section>
             <article class="index_vid">
-                <div>
-                    <iframe width="460" height="259" src="https://www.youtube.com/embed/yqFQzbv6Sfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/tnibarjlJLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" frameborder="0"></iframe>
+                      </div>
+                      <div class="carousel-item">
+                        <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/yqFQzbv6Sfk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" frameborder="0"></iframe>
+                      </div>
+                      <div class="carousel-item">
+                        <iframe src="<iframe width="560" height="315" src="https://www.youtube.com/embed/RaSR3KshQK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>" frameborder="0"></iframe>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
              </article>
         </section>
     </main><br>
     <footer>
         <div>
-        <a href="https://open.spotify.com/artist/40uxN0wZJ6FEkF1giIv8NA?si=ZsxFMh_lT0aenqlw2wSyrw" target="_blank">Spotify</a>
-        <a href="https://tidal.com/browse/artist/26204980" target="_blank">TIDAL</a>
-        <a href="https://www.youtube.com/channel/UCKCuc8mQcoTvH45b0DiBLdw" target="_blank">Youtube</a>
-        <a href="https://deezer.page.link/J55JyNgYp9nQcNkc7" target="_blank">Deezer</a>
+        <div><a href="https://open.spotify.com/artist/40uxN0wZJ6FEkF1giIv8NA?si=ZsxFMh_lT0aenqlw2wSyrw" target="_blank">Spotify</a></div>
+        <div><a href="https://tidal.com/browse/artist/26204980" target="_blank">TIDAL</a></div>
+        <div><a href="https://www.youtube.com/channel/UCKCuc8mQcoTvH45b0DiBLdw" target="_blank">Youtube</a></div>
+        <div><a href="https://deezer.page.link/J55JyNgYp9nQcNkc7" target="_blank">Deezer</a></div>
         </div>
         <div>
-                <a href="https://www.instagram.com/provisoriook/?hl=es" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                <a href="https://www.facebook.com/Provisoriok" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <div><a href="https://www.instagram.com/provisoriook/?hl=es" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a></div>
+                <div><a href="https://www.facebook.com/Provisoriok" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a></div>
+                <div><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a></div>
         </div><br>
         <h3>1717 Harrison St, San Francisco, CA 94103, USA</h3>
         <h3>© 2022 Your Company.  All rights reserved.</h3>
-    </footer>  
+    </footer>
+    <!-- bs script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
