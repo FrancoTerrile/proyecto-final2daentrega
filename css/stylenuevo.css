@@ -1,0 +1,65 @@
+.index_vid div, .index_title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shows_title, .merch_title, .privacy_title, .nosotros_title {
+  color: #ffffff;
+  font-family: "Koulen", cursive;
+  font-size: 9em;
+  font-weight: 400;
+  opacity: 90%;
+  text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+  margin-top: auto;
+  margin-bottom: 0cm;
+  height: none;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  margin-inline: 1em;
+}
+footer div a {
+  width: auto;
+  height: auto;
+  opacity: 70%;
+  color: #ffffff;
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  justify-content: center;
+}
+footer div a:hover {
+  box-shadow: -1.5px 2px 6px rgb(0, 0, 0);
+}
+footer div a i:hover {
+  box-shadow: -1.5px 2px 6px rgb(0, 0, 0);
+}
+footer h3 {
+  color: #ffffff;
+  font-size: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.index_title {
+  font-family: Rosario;
+  color: #ca1bbb;
+  font-size: 110;
+  font: bold;
+  text-shadow: -5px 7px 6px rgba(255, 255, 255, 0.73);
+  font-size: 9em;
+  line-height: 1.28;
+  letter-spacing: -0.5px;
+  font-family: sans-serif;
+  opacity: 70%;
+}
+
+/*# sourceMappingURL=stylenuevo.css.map */

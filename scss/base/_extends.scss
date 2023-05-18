@@ -1,0 +1,42 @@
+%flex_centrado{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+%estilo_title{
+    color: #ffffff;
+    font-family: 'Koulen', cursive;
+    font-size: 9em;
+    font-weight: 400;
+    opacity: 90%;
+    text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
+    margin-top: auto;
+    margin-bottom: 0cm;
+    height: none;
+}
+
+.index_title{
+    @extend %flex_centrado
+}
+
+.index_vid div{
+    @extend %flex_centrado
+}
+
+body footer h3{
+    @extend %flex_centrado
+}
+
+.nosotros_title{
+    @extend %estilo_title
+}
+.privacy_title{
+    @extend %estilo_title
+}
+.merch_title{
+    @extend %estilo_title
+}
+.shows_title{
+    @extend %estilo_title
+}

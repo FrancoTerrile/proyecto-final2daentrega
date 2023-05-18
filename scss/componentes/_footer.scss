@@ -1,0 +1,36 @@
+footer{
+    div{
+        display: flex;
+        justify-content: center;
+        div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1%;
+            margin-inline: 1em;
+        }
+        a{
+            width: auto;
+            height: auto;
+            opacity: 70%;
+            color: #ffffff;
+            font-family: 'Spinnaker', sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+            justify-content: center;
+            &:hover{
+                box-shadow:  -1.5px 2px 6px rgb(0, 0, 0);
+            }
+            i{
+                &:hover{
+                    box-shadow:  -1.5px 2px 6px rgb(0, 0, 0);
+                } 
+            }
+        }
+    }
+    h3{
+        color: #ffffff;
+        font-size: 0.5em;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -20,8 +20,7 @@
     background-color: #680a53;
     background-position-y: 48%;
 }
-
- .index_vid{
+.index_vid div{
     display: flex;
     justify-content: center;
 }
@@ -118,7 +117,7 @@ body footer div a{
     color: #ffffff;
     font-family: 'Spinnaker', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1em;
     justify-content: center;
 }
 
@@ -143,7 +142,7 @@ body footer div a i:hover{
 
 body footer h3{
     color: #ffffff;
-    font-size: 11px;
+    font-size: 0.5em;
     display: flex;
     justify-content: center;
 }
@@ -224,7 +223,7 @@ body{
 	position: relative;
 	box-shadow: 0 0 8px silver;
 }
-img{
+.nosotros_gallery .grid img{
 	display: block;
 	object-fit: cover;
 	object-position: center;
@@ -279,7 +278,7 @@ body header h2{
     color: #ffffff;
     font-family: "Helvetica";
 	font-weight: 400;
-	font-size: 36px;
+	font-size: 3em;
 	text-decoration: underline;
 }
 
@@ -321,29 +320,12 @@ body section article ul{
     font-weight: 400;
 }
 
-.remeras_list ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-}
-.remeras_list ul li{
-    margin-right: 1cm;
+img{
+    object-fit: cover;
 }
 
-.remeras_list ul li .merch_remera1{
-    width: 250px;
-    height: 250px;
-}
-
-.remeras_list ul li .merch_remera2{
-    width: 250px;
-    height: 250px;
-}
-
-.remeras_list ul li .merch_remera3{
-    width: 250px;
-    height: 250px;
+.remeras_list h5{
+    color: black;
 }
 
 .CD_list ul{
@@ -365,10 +347,6 @@ body section article ul{
 .CD_list ul li .merch_single{
     width: 400px;
     height: 300px;
-}
-
-.remeras_list ul li img{
-    position: static;
 }
 
 .CD_list ul li img{
