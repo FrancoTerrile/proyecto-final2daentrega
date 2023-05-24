@@ -1,0 +1,104 @@
+body{
+    header{
+        nav{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                li{
+                    a{
+                        padding: 0px 10px 0px 10px;
+                        opacity: 93%;
+                        box-shadow:  -0.5px 2px 5px rgb(255, 255, 255);
+                        background: #680a53;
+                        color: #ffffff;
+                        border-color: #ffffff;
+                        border-width: 0px;
+                        border-radius: 16px 16px 16px 16px;
+                        border-style: dashed;
+                        font-weight: 100;
+                        font-size: 1rem;
+                        font-family: 'Koulen', cursive;
+                        opacity: 78%;
+                        :nth-child(1){
+                            border-right  : 2px solid rgb(0, 0, 0);
+                            letter-spacing: 1px;
+                            padding-right: 0.4cm;
+                        }
+                        :nth-child(2){
+                            border-right  : 2px solid rgb(0, 0, 0);
+                            letter-spacing: 1px;
+                            padding-left: 0.4cm;
+                            padding-right: 0.4cm;
+                        }
+                        :nth-child(3){
+                            border-right  : 2px solid rgb(0, 0, 0);
+                            letter-spacing: 1px;
+                            padding-left: 0.4cm;
+                            padding-right: 0.4cm;
+                        }
+                        :nth-child(4){
+                            letter-spacing: 1px;
+                            padding-left: 0.4cm;
+                            padding-right:  0.4cm;
+                            border-right  : 2px solid rgb(0, 0, 0);
+                        }
+                        :nth-child(5){
+                            letter-spacing: 1px;
+                            padding-left: 0.4cm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar{
+    background-image: linear-gradient(#680a53, black);
+    ul{
+        li{
+            a{
+                padding: 0px 10px 0px 10px;
+                opacity: 93%;
+                box-shadow:  -0.5px 2px 5px rgb(255, 255, 255);
+                background: #680a53;
+                color: #ffffff;
+                border-color: #ffffff;
+                border-width: 0px;
+                border-radius: 16px 16px 16px 16px;
+                border-style: dashed;
+                font-weight: 100;
+                font-size: 1rem;
+                font-family: 'Koulen', cursive;
+                opacity: 78%;
+                @media (max-width: 756px){
+                    font-size: 12px;
+                    box-shadow: none;
+                }
+                &:hover{
+                    box-shadow:  -1.5px 2px 6px rgb(0, 0, 0);
+                } 
+            }
+        }
+    }
+}
+
+.container-fluid a img{
+    border-radius: 50%;
+}
+
+.navbar-expand-lg{
+    @media (max-width: 756px){
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.index_nav{
+    ul{
+        @media (max-width: 756px){
+            justify-content: center;
+            flex-direction: row;
+        }
+    }
+}

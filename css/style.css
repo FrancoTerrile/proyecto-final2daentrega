@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     font-family: sans-serif;
+    overflow-x: visible;
 }
 
 .body_index{
@@ -37,7 +38,7 @@ body{
 }
 
 /*fin css del body*/
-
+/* index nav */
 .index_nav{
     display: flex;
     justify-content: center;
@@ -49,13 +50,7 @@ body header nav ul{
     list-style: none;
 }
 
-
-body header nav{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-body header nav ul li a{
+header nav ul li a{
     padding: 0px 10px 0px 10px;
     opacity: 93%;
     box-shadow:  -0.5px 2px 5px rgb(255, 255, 255);
@@ -66,12 +61,37 @@ body header nav ul li a{
     border-radius: 16px 16px 16px 16px;
     border-style: dashed;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Koulen', cursive;
     opacity: 78%;
 }
 
-body header nav ul li a:hover{
+/* fin index nav */
+
+.navbar{
+    background-image: linear-gradient(#680a53, black);
+}
+.container-fluid a img{
+    border-radius: 50%;
+}
+
+.navbar ul li a{
+    padding: 0px 10px 0px 10px;
+    opacity: 93%;
+    box-shadow:  -0.5px 2px 5px rgb(255, 255, 255);
+    background: #680a53;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-width: 0px;
+    border-radius: 16px 16px 16px 16px;
+    border-style: dashed;
+    font-weight: 100;
+    font-size: 1rem;
+    font-family: 'Koulen', cursive;
+    opacity: 78%;
+}
+
+.navbar ul li a:hover{
     box-shadow:  -1.5px 2px 6px rgb(0, 0, 0);
 }
 
@@ -157,9 +177,9 @@ body footer h3{
     font-weight: 400;
     opacity: 90%;
     text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
-    margin-top: auto;
-    margin-bottom: 0cm;
-    height: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: auto;
 }
 
 .nosotros_index{
@@ -266,12 +286,13 @@ body{
 
 .privacy_title{
     font-family: 'Koulen', cursive;
-    font-size: 700%;
+    font-size: 8em;
     color: #ffffff;
     text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
-    margin-top: auto;
-    margin-bottom: 0cm;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     opacity: 85%;
+
 }
 
 body header h2{
@@ -284,7 +305,7 @@ body header h2{
 
 .privacy_parrafo{
     color: #ffffff;
-    
+    overflow-x: hidden;
 }
 
 /*fin css del privacy policy*/
@@ -324,34 +345,21 @@ img{
     object-fit: cover;
 }
 
-.remeras_list h5{
-    color: black;
-}
-
-.CD_list ul{
+.carousel{
+    width: 20em;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    list-style: none;
 }
 
-.CD_list ul li{
-    margin-right: 1.5cm;
+.grid-Container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 2em;
 }
 
-.CD_list ul li .merch_ep{
-    width: 400px;
-    height: 300px;
-}
 
-.CD_list ul li .merch_single{
-    width: 400px;
-    height: 300px;
-}
-
-.CD_list ul li img{
-    position: static;
-}
 
 /* fin css merch */
 /* css shows */
@@ -382,8 +390,8 @@ img{
     color: #ffffff;
     text-shadow: -11px 2px 5px rgba(0, 0, 0, 0.65);
     opacity: 85%;
-    margin-top: auto;
-    margin-bottom: 0px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .shows_index{
@@ -393,43 +401,18 @@ img{
 
 /* css responsive mobile */
 
-@media (max-width: 576px) {
+@media (max-width: 756px){
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+}
+@media (max-width: 756px) {
     /* mobile nav css */
-    body header nav ul{
-        flex-direction: column;
-    }
-    body header nav ul li a{
+    .navbar ul li a{
         font-size: 12px;
+        box-shadow: none;
     }
-    body header nav ul li:nth-child(1){
-        border-right  : none;
-        letter-spacing: 1px;
-    }
-    
-    body header nav ul li:nth-child(2){
-        border-right  : none;
-        letter-spacing: 1px;
-        padding-left: 0;
-    }
-    
-    body header nav ul li:nth-child(3){
-        border-right  : none;
-        letter-spacing: 1px;
-        padding-left: 0;
-    }
-    
-    body header nav ul li:nth-child(4){
-        letter-spacing: 1px;
-        border-right  : none;
-        padding-left: 0;
-    }
-
-    body header nav ul li:nth-child(5){
-        letter-spacing: 1px;
-        border-right  : none;
-        padding-left: 0;
-    }
-
     .index_nav ul{
         justify-content: center;
         flex-direction: row;
@@ -448,26 +431,25 @@ img{
     /* fin mobile de shows */
 
     /* mobile de merch */
-    .remeras_list ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; 
-    }
-    .CD_list ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .merch_title{
-        display: flex;
-        justify-content: center;
-    }
-    footer{
-        margin-top: 20px;
+    .grid-Container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-bottom: 2em;
     }
     /* fin mobile de merch */
     /* mobile de index */
     .index_title{
         font-size: 400%;
+    }
+    div iframe{
+        width: auto;
+        height: fit-content;
+    }
+    /* privacy policy */
+    .privacy_title{
+        overflow-wrap: break-word;
+        font-size: 6em;
     }
     }

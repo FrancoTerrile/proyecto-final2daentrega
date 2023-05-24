@@ -14,13 +14,19 @@
     margin-top: auto;
     margin-bottom: 0cm;
     height: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-
+//flex extend
 .index_title{
     @extend %flex_centrado
 }
 
 .index_vid div{
+    @extend %flex_centrado
+}
+
+.index_nav{
     @extend %flex_centrado
 }
 

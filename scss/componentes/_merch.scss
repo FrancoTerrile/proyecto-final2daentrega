@@ -1,0 +1,44 @@
+.merch_index{
+    background-image: url(../assets/DSC_0198.jpg);
+    background-position-x: 25%;
+    background-position-y: -850px;
+    background-repeat: no-repeat;
+}
+
+body{
+    section{
+        article{
+            h2{
+                font-family: 'Spinnaker', sans-serif;
+                font-size: 36px;
+                color: #ffffff;
+            }
+            ul{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #ffffff;
+                font-weight: 400;  
+            }
+        }
+    }
+}
+
+.carousel{
+    width: 20em;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-Container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 2em;
+    @media (max-width: 756px){
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        justify-items: center;
+        margin-bottom: 2em;
+    }
+}

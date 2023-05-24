@@ -1,0 +1,32 @@
+.shows_article{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    @media (max-width: 756px){
+        grid-template-columns: min-content;
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+    div{
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: 700;  
+        }
+    }
+    p{
+        font-family: 'Spinnaker', sans-serif;
+    }
+}
+
+.shows_title{
+    @media (max-width: 756px){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.shows_index{
+    background-image: url(../assets/DSC_0198.jpg);
+    background-position-x: -1100px;
+}

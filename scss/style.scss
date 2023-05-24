@@ -5,16 +5,74 @@
 @import './base/extends';
 // imports componentes
 @import './componentes/footer';
+@import './componentes/nav';
+@import './componentes/merch';
+@import './componentes/shows';
+@import './componentes/nosotros';
 
-.index_title{
-    font-family: Rosario;
-    color: #ca1bbb;
-    font-size: 110;
-    font: bold;
-    text-shadow: -5px 7px 6px rgba(255, 255, 255, 0.73);
-    font-size: 9em;
-	line-height: 1.28;
-	letter-spacing: -0.5px;
-    font-family: sans-serif;
-    opacity: 70%;
-}
+.body_index{
+    background-image: url(../assets/Soirée\ -\ Portada\ 3000x3000\ JPG.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #680a53;
+    background-position-y: 48%;
+    .index_title{
+        font-family: Rosario;
+        color: #ca1bbb;
+        font-size: 110;
+        font: bold;
+        text-shadow: -5px 7px 6px rgba(255, 255, 255, 0.73);
+        font-size: 9em;
+        line-height: 1.28;
+        letter-spacing: -0.5px;
+        font-family: sans-serif;
+        opacity: 70%;
+        @media (max-width: 756px){
+            font-size: 400%; 
+        }
+    }
+    }
+    body{
+        background-image: linear-gradient(#680a53, black);
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    img{
+        object-fit: cover;
+    }
+
+    body{
+        header{
+            h2{
+                color: #ffffff;
+                font-family: "Helvetica";
+                font-weight: 400;
+                font-size: 3em;
+                text-decoration: underline; 
+            }
+        }
+        main{
+            div{
+                iframe{
+                    @media (max-width: 756px){
+                        width: auto;
+                        height: fit-content;  
+                    }
+                }
+            }
+        }
+    }
+    .privacy_parrafo{
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    .privacy_title{
+        @media (max-width: 756px){
+            overflow-wrap: break-word;
+            font-size: 6em;
+        }
+    }
