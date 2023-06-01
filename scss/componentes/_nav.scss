@@ -71,9 +71,10 @@ body{
                 font-size: 1rem;
                 font-family: 'Koulen', cursive;
                 opacity: 78%;
-                @media (max-width: 756px){
-                    font-size: 12px;
+                @media (max-width: 768px){
+                    font-size: 1rem;
                     box-shadow: none;
+                    margin: 1em;
                 }
                 &:hover{
                     box-shadow:  -1.5px 2px 6px rgb(0, 0, 0);

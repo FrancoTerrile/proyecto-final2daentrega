@@ -118,10 +118,11 @@ body header nav ul li a :nth-child(5) {
   font-family: "Koulen", cursive;
   opacity: 78%;
 }
-@media (max-width: 756px) {
+@media (max-width: 768px) {
   .navbar ul li a {
-    font-size: 12px;
+    font-size: 1rem;
     box-shadow: none;
+    margin: 1em;
   }
 }
 .navbar ul li a:hover {
@@ -227,6 +228,11 @@ body section article ul {
   background-position-y: 10%;
   background-color: linear-gradient(#680a53, black);
 }
+@media (max-width: 756px) {
+  .nosotros_index header div h1 {
+    font-size: 6em;
+  }
+}
 
 .nosotros_p p {
   font-family: "Spinnaker", sans-serif;
@@ -331,9 +337,14 @@ body {
   font-family: sans-serif;
   opacity: 70%;
 }
-@media (max-width: 756px) {
+@media (max-width: 768px) {
   .body_index .index_title {
-    font-size: 400%;
+    font-size: 5em;
+  }
+}
+@media (max-width: 425px) {
+  .body_index .index_title {
+    font-size: 3em;
   }
 }
 

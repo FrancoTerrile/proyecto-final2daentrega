@@ -4,13 +4,22 @@
     background-position-x: center;
     background-position-y: 10%;
     background-color: linear-gradient(#680a53, black);
+    header{
+        div{
+            h1{
+                @media (max-width: 756px){
+                    font-size: 6em;
+                }
+            }
+        }
+    }
 }
 
 .nosotros_p{
     p{
         font-family: 'Spinnaker', sans-serif;
         font-size: 100%;
-        color: #ffffff; 
+        color: #ffffff;
     }
 }
 
